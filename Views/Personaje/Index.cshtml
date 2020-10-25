@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Index";
+}
+
+@if(TempData["Success"] != null){
+    <button class="btn btn-primary">
+        @TempData["Success"]
+    </button>
+}
+
+
+@if(TempData["Error"] != null){
+    <button class="btn btn-danger">
+        @TempData["Error"]
+    </button>
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Tipo</th>
+            <th>Arma</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.IdPersonaje</td>
+                @if(item.Arma == "Daga"){
+                    <td>Mago</td>
+                }else{
+                    <td>Guerrero</td>
+                }
+                <td>@item.Arma</td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>

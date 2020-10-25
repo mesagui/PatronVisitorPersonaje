@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form action="/Personaje/Create" method="POST">
+
+    <!-- Tipo de Personaje -->
+    <div>
+        <div>
+            <label>Guerrero</label>
+            <img  src="https://i.pinimg.com/originals/d4/56/1a/d4561a2e20c4949355026ce7f2f15ad8.png" width="150px" height="150px">
+            <input type="radio" name="tipo" value="1">
+        </div>
+        <br>
+        <div>
+            <label>Mago</label>
+            <img  src="https://i.pinimg.com/originals/eb/74/66/eb74666388445f712fe625f6730e0358.png" width="150px" height="150px">
+            <input type="radio" name="tipo" value="2">
+        </div>
+    </div>
+
+    <br><br>
+
+    <!--Botones-->
+    <div>
+        <button type="submit">Crear</button>
+    </div>
+
+</form>
