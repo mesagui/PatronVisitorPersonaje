@@ -7,6 +7,10 @@ namespace VisitorPatron.Models
     {
         public void Visitar(Guerrero g);
         public void Visitar(Mago m);
+
         public void Visitar(List<IPersonaje> personajes);
     }
 }
+
+
+

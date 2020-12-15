@@ -15,6 +15,7 @@ namespace VisitorPatron.Controllers
             this.cnx = cnx;
         }
 
+
         public ActionResult Index(){
             return View(cnx.Personajes.ToList());
         }
